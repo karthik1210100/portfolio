@@ -15,7 +15,7 @@ function ThemedApp() {
   return (
 <div className={`min-h-screen flex flex-col ${theme}`}>
         <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="flex-grow p-4">
           <Routes>
             <Route path="/" element={<Home />} />

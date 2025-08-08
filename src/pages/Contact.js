@@ -14,22 +14,22 @@ function Contact() {
   };
 
   const handleSubmit = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const { name, email, message } = formData;
+    const { name, email, message } = formData;
 
-  if (!name || !email || !message) {
-    alert("Please fill in all fields before submitting.");
-    return;
-  }
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
 
-  setSubmitted(true);
-  setFormData({ name: "", email: "", message: "" });
+    setSubmitted(true);
+    setFormData({ name: "", email: "", message: "" });
 
-  setTimeout(() => {
-    setSubmitted(false);
-  }, 3000);
-};
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3000);
+  };
 
   return (
     <section>

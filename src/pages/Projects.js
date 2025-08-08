@@ -5,15 +5,12 @@ function Projects() {
     <section className="px-4 py-10 max-w-5xl mx-auto">
       <h2 className="text-4xl font-bold mb-10 text-center dark:text-white">Projects</h2>
 
-      {/* <div className="grid gap-8 md:grid-cols-2"> */}
-<div className="grid gap-8 grid-cols-1 md:grid-cols-2">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all">
-          {/* <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white"> */}
-<h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
 
+          <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Senior Living Management System
           </h3>
-          {/* <p className="text-sm text-gray-700 dark:text-gray-300 mb-2"> */}
           <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300 mb-2">
 
             Web platform for managing senior living operations, dashboards, and activities.
@@ -46,11 +43,8 @@ function Projects() {
           </div>
         </div>
 
-        {/* <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all"> */}
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all col-span-1 md:col-span-2">
-          {/* <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white"> */}
-                      <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
-
+          <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Movie Review App
           </h3>
           <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
@@ -70,11 +64,8 @@ function Projects() {
           </a>
         </div>
 
-        {/* <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all md:col-span-2"> */}
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-4 md:p-6 transition-all col-span-1 md:col-span-2">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
-
-          {/* <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white"> */}
+          <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Real-Time Taxi Booking App
           </h3>
           <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">

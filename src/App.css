@@ -78,3 +78,11 @@ main {
 footer {
   border-top: 1px solid #ccc;
 }
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+}

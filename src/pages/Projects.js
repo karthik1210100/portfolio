@@ -43,7 +43,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all col-span-1 md:col-span-2">
+        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all">
           <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Movie Review App
           </h3>
@@ -64,7 +64,7 @@ function Projects() {
           </a>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-4 md:p-6 transition-all col-span-1 md:col-span-2">
+        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all">
           <h3 className="text-xl md:text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Real-Time Taxi Booking App
           </h3>
@@ -85,7 +85,7 @@ function Projects() {
           </a>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all md:col-span-2">
+        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all">
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Portfolio Website
           </h3>
@@ -118,6 +118,7 @@ function Projects() {
         </div>
       </div>
     </section>
+
   );
 }
 

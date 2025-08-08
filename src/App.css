@@ -1,38 +1,84 @@
-.App {
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f0f0f0;
+}
+
+.theme-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.home .intro {
+  padding: 3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 300px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.contact button {
+  background: #007bff;
   color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Ensure full height for layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Flex layout to push footer down */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content should grow to fill remaining space */
+main {
+  flex: 1;
+}
+
+/* Optional for visual clarity */
+footer {
+  border-top: 1px solid #ccc;
 }

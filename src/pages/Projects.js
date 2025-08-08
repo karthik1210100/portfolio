@@ -1,77 +1,3 @@
-// import React from "react";
-
-// function Projects() {
-//   return (
-//     <section className="px-4 py-8 max-w-4xl mx-auto text-gray-800 dark:text-gray-100">
-//   <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
-
-//   <div className="grid gap-6 md:grid-cols-2">
-//     <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-5 transition-colors duration-300">
-//       <h3 className="text-xl font-semibold mb-2">Senior Living Management System</h3>
-//       <ul className="list-disc list-inside text-sm space-y-1">
-//         <li>Real-time updates using WebSockets for dashboards</li>
-//         <li>Error monitoring with BugSnag, performance improvements</li>
-//         <li>
-//           Live URLs:{" "}
-//           <a
-//             href="https://continyoucare.com"
-//             className="text-blue-500 hover:underline"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             continyoucare.com
-//           </a>{" "}
-//           (public),{" "}
-//           <a
-//             href="https://www.intelligotek.com"
-//             className="text-blue-500 hover:underline"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             intelligotek.com
-//           </a>{" "}
-//           (login required)
-//         </li>
-//       </ul>
-//     </div>
-
-//     <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-5 transition-colors duration-300">
-//       <h3 className="text-xl font-semibold mb-2">Movie Review App</h3>
-//       <ul className="list-disc list-inside text-sm space-y-1">
-//         <li>Built with Ruby on Rails (MVC pattern)</li>
-//         <li>Users can add, edit, and review movies with authentication</li>
-//         <li>
-//           GitHub:{" "}
-//           <a
-//             href="https://github.com/karthik1210100/movie_review"
-//             className="text-blue-500 hover:underline"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             View Repository
-//           </a>
-//         </li>
-//       </ul>
-//     </div>
-
-//     <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-5 md:col-span-2 transition-colors duration-300">
-//       <h3 className="text-xl font-semibold mb-2">Frontend Projects</h3>
-//       <ul className="list-disc list-inside text-sm space-y-1">
-//         <li>Taxi Booking App – Real-time map and driver tracking</li>
-//         <li>Food Ordering Platform – Responsive ordering interface</li>
-//         <li>Personal Portfolio Website – SEO-optimized and responsive</li>
-//       </ul>
-//     </div>
-//   </div>
-// </section>
-
-//   );
-// }
-
-// export default Projects;
-
-
-
 import React from "react";
 
 function Projects() {
@@ -80,7 +6,6 @@ function Projects() {
       <h2 className="text-4xl font-bold mb-10 text-center dark:text-white">Projects</h2>
 
       <div className="grid gap-8 md:grid-cols-2">
-        {/* Project 1 - Senior Living Management System */}
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all">
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Senior Living Management System
@@ -116,7 +41,6 @@ function Projects() {
           </div>
         </div>
 
-        {/* Project 2 - Movie Review App */}
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all">
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Movie Review App
@@ -138,7 +62,6 @@ function Projects() {
           </a>
         </div>
 
-        {/* Project 3 - Taxi Booking App */}
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all md:col-span-2">
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Real-Time Taxi Booking App
@@ -150,10 +73,16 @@ function Projects() {
             <li>Live map integration with real-time driver updates</li>
             <li>Built using HTML, CSS, JavaScript, and Bootstrap</li>
           </ul>
-          <p className="text-sm text-gray-600 dark:text-gray-400 italic">Source code is private or not available publicly.</p>
+          <a
+            href="https://github.com/karthik1210100/portfolio"
+            className="inline-block text-blue-500 hover:underline text-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Repository →
+          </a>
         </div>
 
-        {/* Project 4 - Portfolio Website */}
         <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all md:col-span-2">
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
             Portfolio Website

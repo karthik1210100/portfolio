@@ -59,26 +59,30 @@ body.dark {
   border-radius: 5px;
 }
 
-/* Ensure full height for layout */
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Flex layout to push footer down */
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Main content should grow to fill remaining space */
 main {
   flex: 1;
 }
 
-/* Optional for visual clarity */
 footer {
   border-top: 1px solid #ccc;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid white;
 }

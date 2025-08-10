@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -14,22 +15,22 @@ function Contact() {
   };
 
   const handleSubmit = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const { name, email, message } = formData;
+    const { name, email, message } = formData;
 
-  if (!name || !email || !message) {
-    alert("Please fill in all fields before submitting.");
-    return;
-  }
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
 
-  setSubmitted(true);
-  setFormData({ name: "", email: "", message: "" });
+    setSubmitted(true);
+    setFormData({ name: "", email: "", message: "" });
 
-  setTimeout(() => {
-    setSubmitted(false);
-  }, 3000);
-};
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3000);
+  };
 
   return (
     <section>
@@ -39,19 +40,18 @@ function Contact() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* LEFT: Contact Details */}
-          <div className="flex flex-col justify-center">
-            <h3 className="text-2xl font-semibold text-blue-700 mb-4">
-              Let's Connect
-            </h3>
-            <p className="mb-2">
-              <strong>Email:</strong> kkarthik1542734@gmail.com
+          <div className="space-y-3">
+            <p className="flex items-center gap-2">
+              <FaEnvelope className="text-blue-500" />
+              kkarthik1542734@gmail.com
             </p>
-            <p className="mb-2">
-              <strong>Phone:</strong> 7812856527
+            <p className="flex items-center gap-2">
+              <FaPhoneAlt className="text-green-500" />
+              7812856527
             </p>
-            <p className="mb-2">
-              <strong>Location:</strong> Coimbatore, Tamil Nadu
+            <p className="flex items-center gap-2">
+              <FaMapMarkerAlt className="text-red-500" />
+              Coimbatore, Tamil Nadu
             </p>
           </div>
 

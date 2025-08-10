@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Certifications from "./pages/Certifications";
+import Experience from './pages/Experience';
 import { ThemeProvider, useTheme } from "./ThemeContext";
 import "./App.css";
 
@@ -22,6 +24,8 @@ function ThemedApp() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/experience" element={<Experience />} />
           </Routes>
         </main>
         <Footer />

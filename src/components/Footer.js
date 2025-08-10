@@ -7,11 +7,10 @@ function Footer() {
 
   return (
     <footer
-      className={`text-center py-4 shadow-inner ${
-        theme === "dark"
+      className={`text-center py-4 shadow-inner ${theme === "dark"
           ? "bg-gray-900 text-white"
           : "bg-gray-100 text-gray-800"
-      }`}
+        }`}
     >
       <p className="mb-2">&copy; {new Date().getFullYear()} Karthikeyan. All rights reserved.</p>
 

@@ -74,7 +74,7 @@ function Projects() {
             <li>Built using HTML, CSS, JavaScript, and Bootstrap</li>
           </ul>
           <a
-            href="https://github.com/karthik1210100/portfolio"
+            href="https://github.com/karthik1210100/taxi_app"
             className="inline-block text-blue-500 hover:underline text-sm"
             target="_blank"
             rel="noopener noreferrer"

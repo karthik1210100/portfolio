@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -14,9 +15,8 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     const { name, email, message } = formData;
 
     if (!name || !email || !message) {
@@ -24,12 +24,32 @@ function Contact() {
       return;
     }
 
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
+    try {
 
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 3000);
+       const emailData = {
+        ...formData,
+        time: new Date().toLocaleString()
+      };
+
+      await emailjs.send(
+        'service_lwsmi6j', 
+        'template_l930zht',
+        emailData,
+        'STlzh-vj4RXZROLUt' 
+      );
+
+      alert('Message sent successfully!');
+
+      setSubmitted(true);
+      setFormData({ name: "", email: "", message: "" });
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 3000);
+
+    } catch (error) {
+      alert('Failed to send: ' + error.text);
+    }
   };
 
   return (

@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import Certifications from "./pages/Certifications";
 import Experience from './pages/Experience';
 import { ThemeProvider, useTheme } from "./ThemeContext";
-import "./App.css";
 
 function ThemedApp() {
   const { theme } = useTheme();

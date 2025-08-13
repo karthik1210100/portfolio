@@ -14,11 +14,7 @@ const Navbar = () => {
         <Link
           to="/"
           className="flex items-center gap-3 text-2xl font-bold tracking-wide text-black dark:text-white no-underline hover:text-inherit cursor-pointer">
-          <img
-            src="/rails_img.png"
-            alt="Profile"
-            className="w-9 h-9 rounded-full object-cover border-2 border-gray-300 dark:border-white"
-          />
+          <img src="/rails_img.png" alt="Profile" className="w-9 h-9 rounded-full object-cover border-2 border-gray-300 dark:border-white" />
           Karthikeyan
         </Link>
 
@@ -36,19 +32,14 @@ const Navbar = () => {
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
 
-          <button
-            onClick={toggleMenu}
-            className="md:hidden focus:outline-none text-2xl transition-transform transform hover:scale-110"
-          >
+          <button onClick={toggleMenu} className="md:hidden focus:outline-none text-2xl transition-transform transform hover:scale-110" >
             {menuOpen ? '✖' : '☰'}
           </button>
         </div>
       </div>
 
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${menuOpen ? 'max-h-60 py-2' : 'max-h-0'
-          }`}
-      >
+        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${menuOpen ? 'max-h-60 py-2' : 'max-h-0' }`} >
         <ul className={`flex flex-col space-y-4 px-4 pt-2 text-lg font-medium ${theme === 'light' ? 'bg-white' : 'bg-gray-800'}`}>
           <li><Link to="/" onClick={toggleMenu} className="hover:text-blue-400">Home</Link></li>
           <li><Link to="/about" onClick={toggleMenu} className="hover:text-blue-400">About</Link></li>

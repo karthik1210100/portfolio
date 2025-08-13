@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
-import emailjs from '@emailjs/browser';
-
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {

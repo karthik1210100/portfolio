@@ -2,6 +2,23 @@ import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
+import emailjs from '@emailjs/browser';
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    await emailjs.send(
+      'service_lwsmi6j', 
+      'contact_form', 
+      formData,
+      'STlzh-vj4RXZROLUt' 
+    );
+    setSubmitted(true);
+  } catch (error) {
+    alert('Failed to send: ' + error.text);
+  }
+};
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",

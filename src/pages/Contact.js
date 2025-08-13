@@ -10,6 +10,7 @@ function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,9 +25,10 @@ function Contact() {
       return;
     }
 
-    try {
+    setIsLoading(true);
 
-       const emailData = {
+    try {
+      const emailData = {
         ...formData,
         time: new Date().toLocaleString()
       };
@@ -42,13 +44,13 @@ function Contact() {
 
       setSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
-
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 3000);
-
+      
     } catch (error) {
-      alert('Failed to send: ' + error.text);
+      console.error('EmailJS Error:', error);
+      alert(`Failed to send message. Please try again later. Error: ${error.text || error.message}`);
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => setSubmitted(false), 3000);
     }
   };
 
@@ -67,7 +69,7 @@ function Contact() {
             </p>
             <p className="flex items-center gap-2">
               <FaPhoneAlt className="text-green-500" />
-              7812856527
+              +91 7812856527
             </p>
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-red-500" />
@@ -78,7 +80,7 @@ function Contact() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {submitted && (
               <div className="bg-green-100 text-green-700 px-4 py-2 rounded-md">
-                Thanks for your message!
+                Thanks for your message! I'll get back to you soon.
               </div>
             )}
 
@@ -91,6 +93,7 @@ function Contact() {
                 onChange={handleChange}
                 className="w-full border border-gray-300 px-4 py-2 rounded-md"
                 placeholder="Your name"
+                required
               />
             </div>
 
@@ -103,6 +106,7 @@ function Contact() {
                 onChange={handleChange}
                 className="w-full border border-gray-300 px-4 py-2 rounded-md"
                 placeholder="Your email"
+                required
               />
             </div>
 
@@ -115,14 +119,16 @@ function Contact() {
                 className="w-full border border-gray-300 px-4 py-2 rounded-md"
                 rows="4"
                 placeholder="Your message"
+                required
               />
             </div>
 
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700"
+              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 disabled:opacity-50"
+              disabled={isLoading}
             >
-              Send
+              {isLoading ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         </div>

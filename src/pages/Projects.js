@@ -92,6 +92,29 @@ function Projects() {
             </a>
           </div>
         </div>
+
+        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transition-all" data-aos="fade-up" data-aos-delay="300">
+          <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-white">
+            StyleSneak E-commerce
+          </h3>
+          <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+            A modern sneaker e-commerce platform built with React and Tailwind CSS.
+          </p>
+          <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 space-y-1 mb-3">
+            <li>Product catalog with filtering and search functionality</li>
+            <li>Shopping cart with persistent storage</li>
+            <li>User authentication and profile management</li>
+            <li>Responsive design with dark/light mode</li>
+          </ul>
+          <div className="text-sm space-y-1">
+            <a href="https://github.com/karthik1210100/stylesneak-ecommerce" className="text-blue-500 hover:underline mr-3" target="_blank" rel="noopener noreferrer">
+              GitHub →
+            </a>
+            <a href="https://style-trends.netlify.app/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+              Live Demo →
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
